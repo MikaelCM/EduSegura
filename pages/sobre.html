@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EduSegura – Sobre</title>
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="/css/sobre.css" />
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <a href="/index.html" class="logo">🎓 EduSegura</a>
+            <ul>
+                <li><a href="/index.html">Início</a></li>
+                <li><a href="cursos.html">Cursos</a></li>
+                <li><a href="sobre.html" class="ativo">Sobre</a></li>
+                <li><a href="login.html">Entrar</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="topo-pagina">
+            <h1>Sobre o Projeto</h1>
+            <p>Conheça a plataforma e a equipe por trás do EduSegura</p>
+        </section>
+
+        <div class="conteudo">
+            <h2>O que é o EduSegura?</h2>
+            <p>
+                O EduSegura é uma plataforma digital colaborativa desenvolvida como Projeto Integrado
+                Multidisciplinar (PIM) do curso de CST em Análise e Desenvolvimento de Sistemas da UNIPLAN.
+                Seu objetivo é promover a educação digital segura e inclusiva, integrando Inteligência Artificial,
+                boas práticas de cibersegurança e conformidade com a LGPD.
+            </p>
+
+            <hr class="divisor" />
+
+            <h2>Nossa missão</h2>
+            <p>
+                Democratizar o acesso ao ensino de qualidade por meio de tecnologia acessível, segura e
+                sustentável, garantindo que alunos, professores e coordenadores possam interagir em um
+                ambiente confiável, com proteção total dos dados pessoais.
+            </p>
+
+            <hr class="divisor" />
+
+            <h2>Equipe</h2>
+            <div class="grid-equipe">
+                <div class="card card-membro">
+                    <div class="avatar">👩‍💻</div>
+                    <h3>Érica da Silva Souza</h3>
+                    <p>02410040941</p>
+                </div>
+                <div class="card card-membro">
+                    <div class="avatar">👨‍💻</div>
+                    <h3>Mikael Carvalho Mendes</h3>
+                    <p>02410040940</p>
+                </div>
+                <div class="card card-membro">
+                    <div class="avatar">👩‍💻</div>
+                    <h3>Raíssa Adjuto Sanders</h3>
+                    <p>02410041160</p>
+                </div>
+                <div class="card card-membro">
+                    <div class="avatar">👩‍💻</div>
+                    <h3>Tatiane da Silva Domiense</h3>
+                    <p>02410041017</p>
+                </div>
+            </div>
+
+            <hr class="divisor" />
+
+            <h2>Orientador</h2>
+            <p>Prof. Fabiano Oliveira de Carvalho – UNIPLAN, Brasília – DF</p>
+        </div>
+    </main>
+
+    <footer>
+        <p>
+            @ <span id="ano"></span>
+            <span>EduSegura</span>
+            - UNIPLAN | Projeto Integrado Multidisciplinar
+        </p>
+    </footer>
+
+    <script>
+        document.getElementById('ano').textContent = new Date().getFullYear();
+    </script>
+
+</body>
+
+</html>

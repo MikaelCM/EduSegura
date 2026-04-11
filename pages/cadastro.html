@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EduSegura – Cadastro</title>
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="/css/cadastro.css" />
+    
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <a href="/index.html" class="logo">🎓 EduSegura</a>
+            <ul>
+                <li><a href="/index.html">Início</a></li>
+                <li><a href="cursos.html">Cursos</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="login.html">Entrar</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="pagina-form">
+            <div class="caixa-form">
+                <h1>Criar conta</h1>
+                <p class="subtitulo">Preencha os dados para começar a aprender</p>
+
+                <form class="form-stack" action="#" method="post">
+                    <div class="form-linha">
+                        <div class="form-group">
+                            <label for="nome">Nome</label>
+                            <input type="text" id="nome" name="nome" placeholder="Ana" required />
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="sobrenome">Sobrenome</label>
+                            <input type="text" id="sobrenome" name="sobrenome" placeholder="Lima" required />
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email" name="email" placeholder="seu@email.com" required />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="perfil">Perfil</label>
+                        <select id="perfil" name="perfil" required>
+                            <option value="" disabled selected>Selecione...</option>
+                            <option value="aluno">Aluno</option>
+                            <option value="professor">Professor</option>
+                            <option value="coordenador">Coordenador</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="senha">Senha</label>
+                        <input type="password" id="senha" name="senha" placeholder="Mínimo 8 caracteres" required />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="confirmar">Confirmar senha</label>
+                        <input type="password" id="confirmar" name="confirmar" placeholder="Repita a senha" required />
+                    </div>
+
+                    <button type="submit" class="btn btn-primary btn-form">Criar minha conta</button>
+                </form>
+
+                <p class="link-form">Já tem conta? <a href="login.html">Entrar</a></p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>
+            @ <span id="ano"></span>
+            <span>EduSegura</span>
+            - UNIPLAN | Projeto Integrado Multidisciplinar
+        </p>
+    </footer>
+
+    <script>
+        document.getElementById('ano').textContent = new Date().getFullYear();
+    </script>
+
+</body>
+
+</html>

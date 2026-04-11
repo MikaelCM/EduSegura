@@ -1,0 +1,91 @@
+.hero {
+    background: linear-gradient(135deg, var(--azul) 0%, var(--azul-esc) 100%);
+    color: var(--branco);
+    padding: 6rem 2rem;
+    text-align: center;
+}
+
+.hero h1 {
+    font-family: 'Sora', sans-serif;
+    font-size: clamp(2rem, 5vw, 3.2rem);
+    font-weight: 700;
+    max-width: 700px;
+    margin: 0 auto 1.2rem;
+    line-height: 1.2;
+}
+
+.hero p {
+    font-size: 1.1rem;
+    opacity: 0.9;
+    max-width: 520px;
+    margin: 0 auto 2.5rem;
+    line-height: 1.7;
+}
+
+.hero-btns {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.btn-branco {
+    background: var(--branco);
+    color: var(--azul);
+}
+
+/* ── RECURSOS ── */
+.recursos {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 5rem 2rem;
+}
+
+.recursos h2 {
+    font-family: 'Sora', sans-serif;
+    font-size: 1.8rem;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.grid-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 1.5rem;
+}
+
+.icon {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.card h3 {
+    font-family: 'Sora', sans-serif;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    color: var(--azul);
+}
+
+.card p {
+    font-size: 0.9rem;
+    color: var(--muted);
+    line-height: 1.6;
+}
+
+/* ── CTA ── */
+.cta {
+    background: var(--azul-clr);
+    text-align: center;
+    padding: 4rem 2rem;
+}
+
+.cta h2 {
+    font-family: 'Sora', sans-serif;
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+}
+
+.cta p {
+    color: var(--muted);
+    margin-bottom: 2rem;
+}

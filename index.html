@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/main.css">
+    <title>EduSegura - Plataforma de Educação Digital</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">🎓 EduSegura</div>
+
+            <ul>
+                <li>
+                    <a href="index.html" class="ativo">Início</a>
+                </li>
+
+                <li>
+                    <a href="pages/cursos.html">Cursos</a>
+                </li>
+
+                <li>
+                    <a href="pages/sobre.html">Sobre</a>
+                </li>
+
+                <li>
+                    <a href="pages/login.html">Entrar</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>Educação Digital Segura e Inclusiva</h1>
+
+            <p>Plataforma colaborativa com Inteligência Artificial para alunos, professores e coordenadores.</p>
+
+        </section>
+
+        <section class="recursos">
+            <h2>Nossos Recursos</h2>
+
+            <div class="grid-cards">
+                <div class="card">
+                    <div class="icon" aria-hidden="true">🤖</div>
+
+                    <h3>IA Educacional</h3>
+                    <p>Recomendação de conteúdos e correção automática de atividades personalizadas.</p>
+                </div>
+
+                <div class="card">
+                    <div class="icon" aria-hidden="true">🔒</div>
+
+                    <h3>Segurança LGPD</h3>
+                    <p>Dados protegidos com criptografia e total conformidade com a lei de proteção de dados.</p>
+                </div>
+
+                <div class="card">
+                    <div class="icon" aria-hidden="true">📱</div>
+
+                    <h3>Acesso em Responsivo</h3>
+                    <p>Interface adaptada para celular, tablet e desktop sem perda de funcionalidade.</p>
+                </div>
+
+                <div class="card">
+                    <div class="icon">🌐</div>
+
+                    <h3>Inclusão Digital</h3>
+                    <p>Acessível para diferentes públicos, com suporte a leitores de tela e alto contraste.</p>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="cta">
+            <h2>Pronto para começar?</h2>
+
+            <p>Junte-se a milhares de alunos e professores na plataforma.</p>
+            <a href="/pages/cadastro.html" class="btn btn-primary">Criar minha conta</a>
+        </section>
+    </main>
+
+    <footer>
+        <p>
+            @ <span id="ano"></span>
+            <span>EduSegura</span>
+            - UNIPLAN | Projeto Integrado Multidisciplinar
+        </p>
+    </footer>
+
+    <script>
+        document.getElementById('ano').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>

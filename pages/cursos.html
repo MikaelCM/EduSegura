@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EduSegura – Cursos</title>
+    <link rel="stylesheet" href="/css/index.css" />
+    <link rel="stylesheet" href="/css/cursos.css">
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <a href="/index.html" class="logo">🎓 EduSegura</a>
+            <ul>
+                <li><a href="/index.html">Início</a></li>
+                <li><a href="cursos.html" class="ativo">Cursos</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="login.html">Entrar</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="topo-pagina">
+            <h1>Catálogo de Cursos</h1>
+            <p>Aprenda com conteúdo seguro, organizado e com apoio de IA</p>
+        </section>
+
+        <div class="conteudo">
+            <div class="filtros">
+                <button class="filtro ativo">Todos</button>
+                <button class="filtro">Programação</button>
+                <button class="filtro">Segurança</button>
+                <button class="filtro">Banco de Dados</button>
+                <button class="filtro">Redes</button>
+            </div>
+
+            <div class="grid-cursos">
+
+                <article class="card card-curso">
+                    <div class="card-curso-topo">🐍</div>
+                    <div class="card-curso-corpo">
+                        <span class="tag-nivel">Iniciante</span>
+                        <h3>Introdução ao Python</h3>
+                        <p>Lógica de programação, estruturas de dados e manipulação de arquivos JSON.</p>
+                        <div class="card-curso-rodape">
+                            <span>12 aulas</span>
+                            <a href="login.html" class="btn btn-primary btn-ver">Ver curso</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="card card-curso">
+                    <div class="card-curso-topo">🔒</div>
+                    <div class="card-curso-corpo">
+                        <span class="tag-nivel">Intermediário</span>
+                        <h3>Cibersegurança Básica</h3>
+                        <p>Proteção de dados, senhas seguras, phishing e conformidade com a LGPD.</p>
+                        <div class="card-curso-rodape">
+                            <span>8 aulas</span>
+                            <a href="login.html" class="btn btn-primary btn-ver">Ver curso</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="card card-curso">
+                    <div class="card-curso-topo">🗄️</div>
+                    <div class="card-curso-corpo">
+                        <span class="tag-nivel">Intermediário</span>
+                        <h3>Banco de Dados SQL e NoSQL</h3>
+                        <p>Modelagem relacional, consultas SQL e introdução ao MongoDB.</p>
+                        <div class="card-curso-rodape">
+                            <span>15 aulas</span>
+                            <a href="login.html" class="btn btn-primary btn-ver">Ver curso</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="card card-curso">
+                    <div class="card-curso-topo">☕</div>
+                    <div class="card-curso-corpo">
+                        <span class="tag-nivel">Intermediário</span>
+                        <h3>Programação Orientada a Objetos</h3>
+                        <p>Herança, encapsulamento, polimorfismo e abstração com Java.</p>
+                        <div class="card-curso-rodape">
+                            <span>10 aulas</span>
+                            <a href="login.html" class="btn btn-primary btn-ver">Ver curso</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="card card-curso">
+                    <div class="card-curso-topo">🌐</div>
+                    <div class="card-curso-corpo">
+                        <span class="tag-nivel">Iniciante</span>
+                        <h3>Desenvolvimento Web Responsivo</h3>
+                        <p>HTML5, CSS3, Flexbox, Grid e boas práticas de acessibilidade.</p>
+                        <div class="card-curso-rodape">
+                            <span>14 aulas</span>
+                            <a href="login.html" class="btn btn-primary btn-ver">Ver curso</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="card card-curso">
+                    <div class="card-curso-topo">🤖</div>
+                    <div class="card-curso-corpo">
+                        <span class="tag-nivel">Avançado</span>
+                        <h3>Machine Learning Aplicado</h3>
+                        <p>Introdução ao aprendizado de máquina com Python e análise de dados.</p>
+                        <div class="card-curso-rodape">
+                            <span>18 aulas</span>
+                            <a href="login.html" class="btn btn-primary btn-ver">Ver curso</a>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>
+            @ <span id="ano"></span>
+            <span>EduSegura</span>
+            - UNIPLAN | Projeto Integrado Multidisciplinar
+        </p>
+    </footer>
+
+    <script>
+        document.getElementById('ano').textContent = new Date().getFullYear();
+    </script>
+
+</body>
+
+</html>
